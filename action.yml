@@ -1,6 +1,5 @@
-name: 'Get NeoForge Version'
-description:
-  'Finds the latest NeoForge version matching a version search string'
+name: 'Get NeoForm Version'
+description: 'Finds the latest NeoForm version matching a version search string'
 author: Twelve Iterations
 
 branding:
@@ -9,12 +8,12 @@ branding:
 
 inputs:
   version:
-    description: 'Version to search for (e.g., 21.11.* for wildcard matching)'
+    description: 'Version to search for (e.g., 1.21.11-* for wildcard matching)'
     required: true
 
 outputs:
   version:
-    description: 'The latest NeoForge version matching the search criteria'
+    description: 'The latest NeoForm version matching the search criteria'
 
 runs:
   using: node20

@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import { findNeoForgeVersion } from './version.js'
+import { findNeoFormVersion } from './version.js'
 
 export async function run(): Promise<void> {
   try {
@@ -7,7 +7,7 @@ export async function run(): Promise<void> {
       required: true
     })
 
-    const result = await findNeoForgeVersion({ version })
+    const result = await findNeoFormVersion({ version })
 
     if (result) {
       core.setOutput('version', result)

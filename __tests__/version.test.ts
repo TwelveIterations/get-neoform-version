@@ -2,7 +2,7 @@
  * Unit tests for src/version.ts
  */
 import { jest } from '@jest/globals'
-import { findNeoForgeVersion } from '../src/version.js'
+import { findNeoFormVersion } from '../src/version.js'
 
 // Mock node-fetch
 const mockFetch = jest.fn()
@@ -17,7 +17,7 @@ describe('version.ts', () => {
 
   it('Throws when version is missing', async () => {
     await expect(
-      findNeoForgeVersion({
+      findNeoFormVersion({
         version: ''
       })
     ).rejects.toThrow('version is not a string')

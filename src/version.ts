@@ -1,6 +1,6 @@
 import { minimatch } from 'minimatch'
 
-export async function findNeoForgeVersion(options: {
+export async function findNeoFormVersion(options: {
   version: string
 }): Promise<string | undefined> {
   const { version: versionSearch } = options
@@ -9,12 +9,12 @@ export async function findNeoForgeVersion(options: {
   }
 
   const response = await fetch(
-    'https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoforge'
+    'https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoform'
   )
   const json = (await response.json()) as { versions: string[] }
   if (!response.ok) {
     throw new Error(
-      `NeoForge API request failed: ${response.status} ${response.statusText}`
+      `NeoForm API request failed: ${response.status} ${response.statusText}`
     )
   }
 

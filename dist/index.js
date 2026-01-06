@@ -29542,15 +29542,15 @@ minimatch.Minimatch = Minimatch;
 minimatch.escape = escape;
 minimatch.unescape = unescape;
 
-async function findNeoForgeVersion(options) {
+async function findNeoFormVersion(options) {
     const { version: versionSearch } = options;
     if (!versionSearch || typeof versionSearch !== 'string') {
         throw new Error('version is not a string');
     }
-    const response = await fetch('https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoforge');
+    const response = await fetch('https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoform');
     const json = (await response.json());
     if (!response.ok) {
-        throw new Error(`NeoForge API request failed: ${response.status} ${response.statusText}`);
+        throw new Error(`NeoForm API request failed: ${response.status} ${response.statusText}`);
     }
     const versions = json.versions.filter((it) => minimatch(it, versionSearch));
     if (versions.length === 0) {
@@ -29564,7 +29564,7 @@ async function run() {
         const version = coreExports.getInput('version', {
             required: true
         });
-        const result = await findNeoForgeVersion({ version });
+        const result = await findNeoFormVersion({ version });
         if (result) {
             coreExports.setOutput('version', result);
         }

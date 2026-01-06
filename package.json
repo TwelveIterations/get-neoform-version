@@ -1,17 +1,17 @@
 {
-  "name": "get-neoforge-version",
-  "description": "Finds the latest NeoForge version for a Minecraft version",
+  "name": "get-neoform-version",
+  "description": "Finds the latest NeoForm version for a Minecraft version",
   "version": "1.0.0",
   "author": "BlayTheNinth",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/TwelveIterations/get-neoforge-version#readme",
+  "homepage": "https://github.com/TwelveIterations/get-neoform-version#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TwelveIterations/get-neoforge-version.git"
+    "url": "git+https://github.com/TwelveIterations/get-neoform-version.git"
   },
   "bugs": {
-    "url": "https://github.com/TwelveIterations/get-neoforge-version/issues"
+    "url": "https://github.com/TwelveIterations/get-neoform-version/issues"
   },
   "keywords": [
     "actions"

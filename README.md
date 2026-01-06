@@ -1,17 +1,17 @@
-# get-neoforge-version
+# get-neoform-version
 
-![Linter](https://github.com/TwelveIterations/get-neoforge-version/actions/workflows/linter.yml/badge.svg)
-![CI](https://github.com/TwelveIterations/get-neoforge-version/actions/workflows/ci.yml/badge.svg)
-![Check dist/](https://github.com/TwelveIterations/get-neoforge-version/actions/workflows/check-dist.yml/badge.svg)
-![CodeQL](https://github.com/TwelveIterations/get-neoforge-version/actions/workflows/codeql-analysis.yml/badge.svg)
+![Linter](https://github.com/TwelveIterations/get-neoform-version/actions/workflows/linter.yml/badge.svg)
+![CI](https://github.com/TwelveIterations/get-neoform-version/actions/workflows/ci.yml/badge.svg)
+![Check dist/](https://github.com/TwelveIterations/get-neoform-version/actions/workflows/check-dist.yml/badge.svg)
+![CodeQL](https://github.com/TwelveIterations/get-neoform-version/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Coverage](./badges/coverage.svg)
 
 ## Usage
 
 ```yaml
-uses: TwelveIterations/get-neoforge-version@v1
+uses: TwelveIterations/get-neoform-version@v1
 with:
-  version: '21.11.*'
+  version: '1.21.11-*'
 ```
 
 ## Development
