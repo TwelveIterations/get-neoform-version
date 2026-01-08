@@ -29569,7 +29569,7 @@ async function run() {
             coreExports.setOutput('version', result);
         }
         else {
-            coreExports.setFailed('No matching version found');
+            coreExports.setFailed('No matching NeoForm version found');
         }
     }
     catch (error) {

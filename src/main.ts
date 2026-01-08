@@ -12,7 +12,7 @@ export async function run(): Promise<void> {
     if (result) {
       core.setOutput('version', result)
     } else {
-      core.setFailed('No matching version found')
+      core.setFailed('No matching NeoForm version found')
     }
   } catch (error) {
     // Fail the workflow run if an error occurs

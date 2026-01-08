@@ -54,7 +54,9 @@ describe('main.ts', () => {
     await run()
 
     // Verify that the action was marked as failed.
-    expect(core.setFailed).toHaveBeenCalledWith('No matching version found')
+    expect(core.setFailed).toHaveBeenCalledWith(
+      'No matching NeoForm version found'
+    )
   })
 
   it('Sets a failed status when an error occurs', async () => {
